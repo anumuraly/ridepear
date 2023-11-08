@@ -56,16 +56,18 @@ nav a:hover {
     display: none;
   }
 
-/* Hero Section */
 
+/* Hero Section */
 .hero {
   display: flex;
+  flex-wrap: wrap;
   padding: 3rem;
 }
 
 .column {
   flex: 1;
   padding: 2rem;
+  text-align: center;
 }
 
 .column:first-child {
@@ -77,12 +79,12 @@ nav a:hover {
   padding-top: 3rem;
 }
 .column:first-child h4 {
-  padding-top: 6rem;
+  padding-top: 2rem;
   color: #7C4700;
 }
 
 .column:last-child {
-  border: 10px solid #B7E044;
+  
   border-radius: 15px;
   padding: 0;
   margin: 0;
@@ -92,13 +94,13 @@ nav a:hover {
 }
 
 .column img {
+  border: 10px solid #B7E044;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
 /* How it works */
-
 .how-it-works {
     display: flex;
     padding: 20px;
@@ -138,6 +140,7 @@ nav a:hover {
   background-color: rgba(183, 224, 68, 0.1);
 }
 
+/* Testimonial */
 .testimonial-section {
   text-align: center;
   margin-top: 2rem;
@@ -153,7 +156,6 @@ nav a:hover {
     flex-wrap: wrap;
     padding: 2rem;
     justify-content: space-around;
-    margin-left: 2rem;
 }
 
 .testimonial-column {
@@ -161,6 +163,9 @@ nav a:hover {
   margin-bottom: 1rem;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-column img {
@@ -170,9 +175,8 @@ nav a:hover {
 }
 
 .testimonial-column p {
-    margin: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    margin: 1rem;
+    
 }
 
 .testimonial-image-container {
@@ -183,7 +187,6 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 8rem;
 }
 
 .testimonial-column:first-child{
@@ -218,6 +221,8 @@ nav a:hover {
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease; 
 }
+
+/* footer */
 .footer-content {
     padding: 20px;
     text-align: center;
@@ -331,7 +336,6 @@ nav a:hover {
 }
 
 /* mobile responsive */
-
 @media (max-width: 768px) {
 
   nav {
@@ -360,7 +364,15 @@ nav a:hover {
     padding: 2rem;
   }
   .column {
+    flex: 1;
     padding: 1rem;
+  }
+  .find {
+    text-align: center;
+  }
+  .find button {
+    width: 100%;
+    margin: 1.5rem;
   }
   .column:first-child h2 {
     padding-top: 1rem;
@@ -368,16 +380,24 @@ nav a:hover {
   .column:first-child h4 {
     padding-top: 2rem;
   }
+  .column:last-child {
+    margin: 2rem 0;
+  }
   .how-it-works {
     flex-direction: column;
     padding: 1rem;
   }
   .works-column {
+    flex: 1;
     margin: 0;
     padding: 1rem;
+    margin-top: -4rem;
   }
   .works-column img {
-    padding-left: 0;
+    /*max-width: 100%;
+    height: auto;
+    padding-left: 0;*/
+    display: none;
   }
 
   .testimonial {
@@ -385,11 +405,11 @@ nav a:hover {
   }
   .testimonial-column {
     flex-basis: 100%;
-    margin: 0;
-    padding: 1rem;
+    
   }
   .testimonial-image-container {
-    margin-left: 6rem;
+    margin: 0;
+    margin-bottom: 1rem;
   }
  
   .green-background {
@@ -406,4 +426,5 @@ nav a:hover {
   .green-background input {
     width: 100%;
   }
+}
 }
