@@ -195,8 +195,8 @@ nav a:hover {
   margin-right: 1rem;
 }
 .testimonial-image-container img {
-  max-width: 100%;
-  height: auto;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
